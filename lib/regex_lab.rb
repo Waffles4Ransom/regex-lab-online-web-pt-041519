@@ -16,5 +16,5 @@ end
 
 
 def valid_phone_number?(phone)
-   phone.scan(/(\d+)-(\d+)-(\d+)/) != nil
+   phone.scan(/\d/).join.length != nil
 end
